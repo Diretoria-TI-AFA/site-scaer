@@ -26,7 +26,7 @@ export default function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextImage();
-        }, 10000);
+        }, 8000);
         return () => clearInterval(interval);
     }, [currentImageIndex]);
 
@@ -79,6 +79,12 @@ export default function Home() {
                                             }`}
                                     />
                                 ))}
+                            </div>
+                        )}
+
+                        {carrouselImages.length > 1 && (
+                            <div className="absolute bottom-74 left-1/2 -translate-x-1/2 flex gap-2">
+                                <p className="text-4xl font-bold text-white text-shadow-white/30 text-shadow-md">DOS CADETES, PARA OS CADETES</p>
                             </div>
                         )}
                     </>
