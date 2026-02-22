@@ -11,10 +11,10 @@ export default function Topbar() {
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>
             </div>
             <div className="px-6">
-                <a href="/home"><img src="logov2_branco.svg" alt="SCAER" className="w-auto max-h-14 mx-auto hover:bg-blue-900/20" /></a>
+                <a onClick={() => navigate("/home")}><img src="logov2_branco.svg" alt="SCAER" className="w-auto max-h-14 mx-auto hover:bg-blue-900/20" /></a>
             </div>
             <div className="py-2">
-                
+
                 <Button onClick={() => navigate("/navamaer")} variant="text-only">Navamaer</Button>
                 <Button onClick={() => navigate("/interafa")} variant="text-only">InterAFA</Button>
             </div>
