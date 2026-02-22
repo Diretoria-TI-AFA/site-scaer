@@ -5,7 +5,7 @@ export default function Topbar() {
     const navigate = useNavigate();
 
     return (
-        <section className="bg-sky-950 w-full pr-24 px-4 py-2 fixed top-0 left-0 z-10 content-center align-items-center text-center flex flex-1 justify-center">
+        <section className="bg-transparent w-full pr-24 px-4 py-2 fixed top-0 left-0 z-10 content-center align-items-center text-center flex flex-1 justify-center">
             <div className="py-2 max-h-full">
                 <Button onClick={() => navigate("/clubes")} variant="text-only">Clubes e Diretorias</Button>
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>

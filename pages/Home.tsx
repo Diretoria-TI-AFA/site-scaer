@@ -31,7 +31,7 @@ export default function Home() {
     }, [currentImageIndex]);
 
     return (
-        <div className="flex flex-col pt-19">
+        <div className="flex flex-col pt-0">
             <div className="relative overflow-hidden w-full">
                 {loadingFotos ? (
                     <div className="w-full max-h-144 bg-sky-900 animate-pulse" style={{ height: "36rem" }} />
