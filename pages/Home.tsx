@@ -13,7 +13,7 @@ export default function Home() {
     const { data: fotos, loading: loadingFotos } = usePocketbase(() => getFotosPorAlbum('banner'));
 
     const carrouselImages: string[] =
-        (fotos as Foto[] | null)?.map((foto: Foto) => getImageUrl(foto, foto.imagem, '800x600')) ?? [];
+        (fotos as Foto[] | null)?.map((foto: Foto) => getImageUrl(foto, foto.imagem, '1920x1080')) ?? [];
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % carrouselImages.length);
@@ -46,7 +46,7 @@ export default function Home() {
                                     key={index}
                                     src={src}
                                     alt={fotos?.[index]?.title ?? `Imagem ${index + 1}`}
-                                    className="w-full max-h-144 shrink-0 object-cover"
+                                    className="w-full max-h-220 shrink-0 object-cover"
                                 />
                             ))}
                         </div>
