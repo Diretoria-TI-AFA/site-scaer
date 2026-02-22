@@ -45,7 +45,7 @@ export default function PostPage() {
     });
 
     return (
-        <main className="mx-auto mt-24 my-8 max-w-11/12 h-auto flex-col bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl">
+        <main className="mx-auto mt-36 my-8 max-w-11/12 h-auto flex-col bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl">
             <img
                 src={imagemUrl}
                 alt={post.titulo}

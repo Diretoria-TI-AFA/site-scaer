@@ -18,7 +18,7 @@ export default function Clubesediretorias() {
     return (
         <div className="
             flex flex-col items-center bg-sky-950/30 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl
-            mt-24 p-4 mx-8
+            mt-36 p-4 mx-8
             grid gap-6
             grid-cols-2
             sm:grid-cols-3

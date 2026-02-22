@@ -32,7 +32,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col pt-0">
-            <div className="relative overflow-hidden w-full">
+            <div className="relative top-0 z-0 overflow-hidden w-full">
                 {loadingFotos ? (
                     <div className="w-full max-h-144 bg-sky-900 animate-pulse" style={{ height: "36rem" }} />
                 ) : carrouselImages.length > 0 ? (

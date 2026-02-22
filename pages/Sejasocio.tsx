@@ -2,7 +2,7 @@
 
 export default function Sejasocio() {
     return (
-        <div className="mx-auto mt-24 my-12 max-w-6/7 h-auto flex-col bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl">
+        <div className="mx-auto mt-36 my-12 max-w-6/7 h-auto flex-col bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl">
             <img src="/espadao.JPG" alt="Imagem da cerimônia de aspirantado da turma Ártemis em 2025" className="mx-auto w-full h-auto max-h-128 object-cover rounded-xl" />
             <p className="text-justify px-auto text-white text-md py-2 flex justify-center items-center">
                 Você, que um dia vibrou no Ninho das Águias, superou desafios e forjou laços de camaradagem que o tempo não apaga. Lembra-se do orgulho de pertencer à Academia da Força Aérea? Essa conexão especial, esse espírito de corpo único, não precisa ficar apenas na memória.

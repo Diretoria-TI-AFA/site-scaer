@@ -2,7 +2,7 @@
 
 export default function Navamaer() {
     return (
-        <div className="bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl w-auto min-h-screen mt-24 mx-4 mb-2 text-center ">
+        <div className="bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl w-auto min-h-screen mt-36 mx-4 mb-2 text-center ">
             <div className="flex flex-col items-center justify-center" >
                 <h1 className="text-2xl font-bold text-gray-200">Resultados</h1>
                 <div className="flex items-center justify-between w-full gap-12 bg-sky-50/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl" >

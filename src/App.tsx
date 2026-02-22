@@ -15,40 +15,16 @@ import Paginadeposts from "../pages/Paginadeposts"
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-
   return (
-
     <BrowserRouter>
       <div className="relative min-h-screen w-full bg-[url('/fundo.jpg')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
-        {isSidebarOpen && (
-          <div
-            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity"
-            onClick={() => setIsSidebarOpen(false)}
-          />
-        )}
-        <div className={`fixed inset-y-0 left-0 z-50 w-64 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}>
-          <div className="flex justify-end p-4">
-            <button onClick={() => setIsSidebarOpen(false)} className="text-gray-600 hover:text-red-500">
-            </button>
-          </div>
+        <div className={`fixed z-80 inset-y-0 left-0 w-64 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="h-full overflow-y-auto">
             <Sidebar onClose={() => setIsSidebarOpen(false)} />
           </div>
         </div>
-        <div className="hidden lg:block fixed top-0 w-full z-30 shadow-md">
-          <Topbar />
-        </div>
-        <div className="lg:hidden fixed top-0 left-0 z-30 w-full p-4 flex items-center bg-transparent">
-          <button
-            onClick={() => setIsSidebarOpen(true)}
-            className="rounded-md p-2 text-white transition"
-          >
-            <div className="flex h-5 w-6 flex-col justify-between">
-              <span className="h-0.5 w-full bg-white shadow-white shadow-xl hover:shadow-2xl"></span>
-              <span className="h-0.5 w-full bg-white shadow-white shadow-xl hover:shadow-2xl"></span>
-              <span className="h-0.5 w-full bg-white shadow-white shadow-xl hover:shadow-2xl"></span>
-            </div>
-          </button>
+        <div className="absolute top-0 w-full z-40">
+          <Topbar onToggleSidebar={() => setIsSidebarOpen(prev => !prev)} isSidebarOpen={isSidebarOpen} />
         </div>
         <main>
           <Routes>
