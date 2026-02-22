@@ -118,7 +118,7 @@ export default function Home() {
                 <h1 className="bg-sky-950 text-center text-white text-2xl py-24 font-bold flex justify-center items-center ">Mídias Sociais</h1>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('home2.jpg')] bg-cover bg-top">
+                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home2.jpg')] bg-cover bg-top">
                     <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-auto mr-12">
                         <h2>Clubes e Diretorias</h2>
                         <p className="text-justify">
@@ -131,7 +131,7 @@ export default function Home() {
 
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('home.jpg')] bg-cover bg-top">
+                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home.jpg')] bg-cover bg-top">
                     <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-12 mr-auto">
                         <h2>Texto 1</h2>
                         <p className="text-justify">
@@ -148,7 +148,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('home2.jpg')] bg-cover bg-top">
+                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home2.jpg')] bg-cover bg-top">
                     <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-auto mr-12">
                         <h2>Texto 1</h2>
                         <p className="text-justify">
