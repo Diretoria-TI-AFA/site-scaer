@@ -4,11 +4,11 @@ import Button from "../components/Button"
 export default function Sidebar({ onClose }: { onClose: () => void }) {
 
     const navigate = useNavigate();
-    
+
     return (
         <section className="w-64 px-4 py-2 bg-sky-950/40 fixed top-0 left-0 z-10 h-screen flex flex-col items-center space-y-2 overflow-y-auto">
             <div>
-                <a href="/home"><img src="logov2_branco.svg" alt="SCAER" className="w-auto max-h-14 mx-auto hover:bg-blue-900/20" /></a>
+                <a onClick={() => { navigate("/home"); onClose(); }}><img src="logov2_branco.svg" alt="SCAER" className="w-auto max-h-14 mx-auto hover:bg-blue-900/20" /></a>
             </div>
             <div className="flex flex-col space-y-1">
                 <Button onClick={() => { navigate("/quemsomos"); onClose(); }} variant="text-only">Quem Somos</Button>
