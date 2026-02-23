@@ -2,23 +2,23 @@
 
 export default function Esquadroes() {
     return (
-        <div className="mt-36 mx-12 w-auto mb-6 rounded-4xl border-sky-50/40 border h-screen flex justify-center items-center bg-sky-950/30 backdrop-blur-xs">
-            <div className="flex gap-8 justify-between items-between w-full px-36">
+        <div className="mt-36 mx-12 w-auto mb-6 rounded-4xl border-sky-50/40 border h-auto py-12 flex justify-center items-center bg-sky-950 backdrop-blur-xs">
+            <div className="flex gap-8 justify-between items-center w-full h-full pt-auto px-36">
                 <div>
-                    <img src="" alt="" />
-                    <h2>Quarto Esquadrão</h2>
+                    <img className="rounded-full" src="/ath.svg" alt="Athos" />
+                    <h2 className="text-auto lg:text-3xl text-center font-bold text-white ">Quarto Esquadrão</h2>
                 </div>
                 <div>
-                    <img src="" alt="" />
-                    <h2>Terceiro Esquadrão</h2>
+                    <img className="rounded-full" src="/uir.svg" alt="Uiraçu" />
+                    <h2 className="text-auto lg:text-3xl text-center font-bold text-white ">Terceiro Esquadrão</h2>
                 </div>
                 <div>
-                    <img src="" alt="" />
-                    <h2>Segundo Esquadrão</h2>
+                    <img className="rounded-full" src="/prs.svg" alt="Perseu" />
+                    <h2 className="text-auto lg:text-3xl text-center font-bold text-white ">Segundo Esquadrão</h2>
                 </div>
                 <div>
-                    <img src="" alt="" />
-                    <h2>Primeiro Esquadrão</h2>
+                    <img className="rounded-full" src="/drk.svg" alt="Drakon" />
+                    <h2 className="text-auto lg:text-3xl text-center font-bold text-white ">Primeiro Esquadrão</h2>
                 </div>
             </div>
         </div>

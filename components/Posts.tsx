@@ -8,7 +8,7 @@ export default function Posts() {
 
     if (loading) {
         return (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 {Array.from({ length: 6 }).map((_, i) => (
                     <div key={i} className="rounded-xl bg-gray-200/30 border border-gray-200/40 animate-pulse h-72" />
                 ))}
@@ -26,7 +26,7 @@ export default function Posts() {
     if (!posts) return null;
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {posts?.map(post => (
                 <Infocard key={post.id} post={post.post} />
             ))}

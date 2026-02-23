@@ -49,7 +49,7 @@ export default function PostPage() {
             <img
                 src={imagemUrl}
                 alt={post.titulo}
-                className="w-full h-72 object-cover rounded-2xl"
+                className="w-full max-h-169 object-cover rounded-2xl"
             />
             <div className="flex items-center gap-4">
                 {post.categoria && (

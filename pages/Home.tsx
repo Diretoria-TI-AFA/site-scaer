@@ -120,14 +120,20 @@ export default function Home() {
                 <p className="text-center px-auto max-w-3/7 text-white text-2xl py-2 flex justify-center items-center ">A SCAER é feita por Cadetes, para Cadetes. Somos parte essencial da vida na AFA, trabalhando continuamente para honrar nossas tradições e construir um futuro brilhante para a Força Aérea Brasileira.</p>
             </div>
             <div className="py-72"></div>
-            <div className="bg-sky-960">
-                <h1 className="bg-sky-950 text-center text-white text-2xl py-24 font-bold flex justify-center items-center ">Mídias Sociais</h1>
+            <div className="bg-sky-960 flex">
+                <div className="bg-sky-950 text-center text-white text-2xl py-12 font-bold flex flex-col gap-4 justify-center items-center w-full">
+                    <p>Mídias Sociais</p>
+                    <div className="flex gap-8 justify-center items-center">
+                        <img onClick={() => window.open("https://www.instagram.com/scaer_afa/", "_blank")} className="w-12 h-12 cursor-pointer hover:w-14 hover:h-14 transition-all duration-300 " src="/instagram_icon_branco.svg" alt="Instagram" />
+                        <img onClick={() => window.open("https://www.youtube.com/@AFAMilitar", "_blank")} className="w-12 h-12 cursor-pointer hover:w-14 hover:h-14 transition-all duration-300 " src="/youtube_icon_branco.svg" alt="Youtube" />
+                    </div>
+                </div>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home2.jpg')] bg-cover bg-top">
-                    <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-auto mr-12">
-                        <h2>Clubes e Diretorias</h2>
-                        <p className="text-justify">
+                <div className="text-center font-bold py-24 text-white bg-[url('/home2.jpg')] min-h-[40rem] bg-cover bg-top">
+                    <div className="max-w-3/7 text-right items-center flex flex-col justify-center ml-auto mr-12">
+                        <h2 className="text-4xl">Clubes e Diretorias</h2>
+                        <p className="text-justify text-2xl">
                             Os Clubes e diretorias da SCAER são responsáveis por promover atividades, eventos e iniciativas que enriquecem a experiência acadêmica e social dos cadetes da Academia da Força Aérea.
                             Com uma gestão democrática e transparente, os clubes e diretorias trabalham em conjunto para oferecer aos cadetes uma variedade de opções de lazer, cultura, esporte e desenvolvimento pessoal.
                             Atualmente, a SCAER conta com XX Clubes e diretorias, cada um com suas próprias atividades e eventos.
@@ -137,27 +143,20 @@ export default function Home() {
 
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home.jpg')] bg-cover bg-top">
-                    <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-12 mr-auto">
-                        <h2>Texto 1</h2>
-                        <p className="text-justify">
-                            A SCAER - Sociedade Acadêmica dos Cadetes da Aeronáutica realiza atividades [...]
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si
+                <div className="flex flex-col justify-end font-bold py-24 text-white bg-[url('/curvpt.png')] min-h-[40rem] bg-cover bg-center">
+                    <div className="max-w-3/7 text-right flex flex-col justify-end mt-auto ml-12 mr-auto">
+                        <h2 className="text-left text-6xl">BRILHO NOS OLHOS</h2>
+                        <p className="text-justify text-2xl">
+                            A palavra BRIOS, significa brilho nos olhos, e é exatamente isso descreve o sentimento dos cadetes da AFA, o brilho nos olhos de quem ama o que faz[...]
                         </p>
                     </div>
                 </div>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center text-3xl font-bold py-24 text-white bg-[url('/home2.jpg')] bg-cover bg-top">
-                    <div className="max-w-3/7 text-4xl text-right items-center flex flex-col justify-center ml-auto mr-12">
-                        <h2>Texto 1</h2>
-                        <p className="text-justify">
+                <div className="text-center font-bold py-24 text-white bg-[url('/home2.jpg')] min-h-[40rem] bg-cover bg-top">
+                    <div className="max-w-3/7 text-right items-center flex flex-col justify-center ml-auto mr-12">
+                        <h2 className="text-4xl">Texto 1</h2>
+                        <p className="text-justify text-2xl">
                             A SCAER - Sociedade Acadêmica dos Cadetes da Aeronáutica realiza atividades [...]
                             Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
                             Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
