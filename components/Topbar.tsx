@@ -24,11 +24,11 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
                     )}
                 </button>
                 <div className="flex items-center px-2" onClick={() => navigate("/home")}>
-                    <img src="/escudoSCAER_branco.svg" alt="SCAER" className="w-auto max-h-24 mx-auto hover:bg-blue-900/20" />
+                    <img src="/logoSCAER_pretoebranco.png" alt="SCAER" className="w-auto max-h-24 mx-auto hover:bg-blue-900/20" />
                 </div>
             </div>
             <div className="py-2">
-                <Button onClick={() => navigate("/noticias")} variant="text-only">Noticias</Button>
+                <Button onClick={() => navigate("/noticias")} variant="text-only" >Noticias</Button>
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => navigate("/esquadroes")} variant="text-only">Esquadrões</Button>
                 <Button onClick={() => navigate("/clubes")} variant="text-only">Clubes e Diretorias</Button>

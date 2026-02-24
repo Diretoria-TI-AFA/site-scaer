@@ -130,17 +130,14 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center font-bold py-24 text-white bg-[url('/home2.jpg')] min-h-[40rem] bg-cover bg-top">
-                    <div className="max-w-3/7 text-right items-center flex flex-col justify-center ml-auto mr-12">
-                        <h2 className="text-4xl">Clubes e Diretorias</h2>
+                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/home.jpg')] min-h-[40rem] bg-cover bg-center">
+                    <div className="max-w-3/7 text-right items-end flex flex-col justify-end ml-auto mr-12">
+                        <h2 className="text-right text-6xl">BRILHO NOS OLHOS</h2>
                         <p className="text-justify text-2xl">
-                            Os Clubes e diretorias da SCAER são responsáveis por promover atividades, eventos e iniciativas que enriquecem a experiência acadêmica e social dos cadetes da Academia da Força Aérea.
-                            Com uma gestão democrática e transparente, os clubes e diretorias trabalham em conjunto para oferecer aos cadetes uma variedade de opções de lazer, cultura, esporte e desenvolvimento pessoal.
-                            Atualmente, a SCAER conta com XX Clubes e diretorias, cada um com suas próprias atividades e eventos.
+                            A palavra BRIOS, significa brilho nos olhos, e é exatamente isso descreve o sentimento dos cadetes da AFA, o brilho nos olhos de quem ama o que faz[...]
                         </p>
                     </div>
                 </div>
-
             </div>
             <div className="bg-sky-960">
                 <div className="flex flex-col justify-end font-bold py-24 text-white bg-[url('/curvpt.png')] min-h-[40rem] bg-cover bg-center">
@@ -153,18 +150,11 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-sky-960">
-                <div className="text-center font-bold py-24 text-white bg-[url('/home2.jpg')] min-h-[40rem] bg-cover bg-top">
-                    <div className="max-w-3/7 text-right items-center flex flex-col justify-center ml-auto mr-12">
-                        <h2 className="text-4xl">Texto 1</h2>
+                <div className="flex flex-col justify-end font-bold py-24 text-white bg-[url('/home.jpg')] min-h-[40rem] bg-cover bg-center">
+                    <div className="max-w-3/7 text-right items-end flex flex-col justify-end ml-auto mr-12">
+                        <h2 className="text-right text-6xl">BRILHO NOS OLHOS</h2>
                         <p className="text-justify text-2xl">
-                            A SCAER - Sociedade Acadêmica dos Cadetes da Aeronáutica realiza atividades [...]
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si parsam param ad astra fili ergo sum ad sumus
-                            Loren ipsum norte ergo si
+                            A palavra BRIOS, significa brilho nos olhos, e é exatamente isso descreve o sentimento dos cadetes da AFA, o brilho nos olhos de quem ama o que faz[...]
                         </p>
                     </div>
                 </div>
