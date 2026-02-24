@@ -16,19 +16,27 @@ export default function Clubesediretorias() {
     if (loading) return <p>Carregando...</p>;
 
     return (
-        <div className="
-            flex flex-col items-center bg-sky-950/30 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl
-            mt-36 p-4 mx-8
-            grid gap-6
-            grid-cols-2
-            sm:grid-cols-3
-            md:grid-cols-4
-            lg:grid-cols-5
-            xl:grid-cols-6
-            ">
-            {clubes?.map(clube => (
-                <Infoclubscards key={clube.id} clube={clube} />
-            ))}
-        </div>
+        <>
+            <div>
+                <img src="/home2.jpg" alt="" className="w-full h-[50rem] object-cover object-top " />
+            </div>
+            <div className="flex flex-col items-center bg-sky-950 backdrop-blur-xs p-4">
+                <h1 className="text-white text-4xl font-bold text-center mt-4">Clubes e Diretorias</h1>
+            </div>
+            <div className="
+                flex flex-col items-center bg-sky-950 backdrop-blur-xs
+                mt-0 p-12
+                grid gap-6
+                grid-cols-2
+                sm:grid-cols-3
+                md:grid-cols-4
+                lg:grid-cols-5
+                xl:grid-cols-6
+                ">
+                {clubes?.map(clube => (
+                    <Infoclubscards key={clube.id} clube={clube} />
+                ))}
+            </div>
+        </>
     )
 }

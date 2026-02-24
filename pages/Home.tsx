@@ -26,7 +26,7 @@ export default function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextImage();
-        }, 8000);
+        }, 3000);
         return () => clearInterval(interval);
     }, [currentImageIndex]);
 
@@ -38,7 +38,7 @@ export default function Home() {
                 ) : carrouselImages.length > 0 ? (
                     <>
                         <div
-                            className="flex transition-transform duration-500 ease-in-out"
+                            className="flex transition-transform duration-600 ease-in-out"
                             style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
                         >
                             {carrouselImages.map((src, index) => (

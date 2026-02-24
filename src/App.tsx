@@ -10,6 +10,7 @@ import Esquadroes from "../pages/Esquadroes";
 import Navamaer from "../pages/Navamaer";
 import Interafa from "../pages/Interafa";
 import Paginadeposts from "../pages/Paginadeposts"
+import Noticias from "../pages/Noticias"
 
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/esquadroes" element={<Esquadroes />} />
             <Route path="/navamaer" element={<Navamaer />} />
             <Route path="/interafa" element={<Interafa />} />
+            <Route path="/noticias" element={<Noticias />} />
           </Routes>
         </main>
 

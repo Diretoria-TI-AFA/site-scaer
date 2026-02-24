@@ -17,7 +17,7 @@ export default function Infoclubscards({ clube }: Props) {
             </div>
             <h3 className="text-white text-md font-bold text-center mt-4">{clube.nome}</h3>
             <p className="text-white text-sm text-center mt-1">{clube.descricao}</p>
-            <p className="text-gray-300 text-xs text-center ">Presidente: {clube.presidente}</p>
+            <p className="text-gray-300 text-xs text-center mt-auto ">Presidente: {clube.presidente}</p>
         </article>
     )
 } 

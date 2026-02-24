@@ -21,12 +21,13 @@ export default function Sidebar({ onClose }: { onClose: () => void }) {
             </div>
             <div className="flex flex-col space-y-1">
                 <Button onClick={() => { navigate("/noticias"); onClose(); }} variant="text-only">Noticias</Button>
-                <Button onClick={() => { navigate("/clubes"); onClose(); }} variant="text-only">Clubes e Diretorias</Button>
                 <Button onClick={() => { navigate("/sejasocio"); onClose(); }} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => { navigate("/esquadroes"); onClose(); }} variant="text-only">Esquadrões</Button>
-                <Button onClick={() => { navigate("/navamaer"); onClose(); }} variant="text-only">Navamaer</Button>
-                <Button onClick={() => { navigate("/interafa"); onClose(); }} variant="text-only">InterAFA</Button>
+                <Button onClick={() => { navigate("/clubes"); onClose(); }} variant="text-only">Clubes e Diretorias</Button>
                 <Button onClick={() => { navigate("/loja"); onClose(); }} variant="text-only">Loja COMERCIAL</Button>
+            </div>
+            <div className="mt-auto">
+                <p className="text-white text-xs text-center">© 2026 SCAER. Todos os direitos reservados.</p>
             </div>
         </section>
     );

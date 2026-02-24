@@ -28,10 +28,11 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
                 </div>
             </div>
             <div className="py-2">
-                <Button onClick={() => navigate("/clubes")} variant="text-only">Clubes e Diretorias</Button>
+                <Button onClick={() => navigate("/noticias")} variant="text-only">Noticias</Button>
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>
-                <Button onClick={() => navigate("/navamaer")} variant="text-only">Navamaer</Button>
-                <Button onClick={() => navigate("/interafa")} variant="text-only">InterAFA</Button>
+                <Button onClick={() => navigate("/esquadroes")} variant="text-only">Esquadrões</Button>
+                <Button onClick={() => navigate("/clubes")} variant="text-only">Clubes e Diretorias</Button>
+                <Button onClick={() => navigate("/loja")} variant="text-only">Loja COMERCIAL</Button>
             </div>
         </nav>
     )
