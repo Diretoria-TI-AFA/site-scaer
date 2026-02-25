@@ -45,24 +45,19 @@ export default function PostPage() {
     });
 
     return (
-        <main className="mx-auto mt-36 my-8 max-w-11/12 h-auto flex-col bg-sky-950/40 backdrop-blur-xs border border-sky-50/35 p-6 rounded-4xl">
+        <main className="mx-auto w-full h-auto flex-col bg-sky-950">
+            <img src="/home.jpg" alt="" className="w-full max-h-[50rem] object-cover object-top" />
+            <h1 className="text-3xl xl:px-56 lg:px-42 md:px-24 sm:px-12 font-bold text-white text-center pt-12 ">
+                {post.titulo}
+            </h1>
             <img
                 src={imagemUrl}
                 alt={post.titulo}
-                className="w-full max-h-169 object-cover rounded-2xl"
+                className="w-full max-h-[30rem] object-cover xl:px-56 lg:px-42 md:px-24 sm:px-12 pt-6"
             />
-            <div className="flex items-center gap-4">
-                {post.categoria && (
-                    <span className="text-xs font-bold uppercase text-sky-400">
-                        {post.categoria}
-                    </span>
-                )}
-                <time className="text-xs text-gray-300">{data}</time>
-            </div>
-            <h1 className="text-3xl font-bold text-white">
-                {post.titulo}
-            </h1>
-            <div className="text-gray-200 prose-p:my-0 text-base leading-relaxed whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: post.conteudo }} />
+            <div className="pt-4 text-gray-200 prose-p:my-0 xl:px-56 lg:px-42 md:px-24 sm:px-12 text-base leading-relaxed whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: post.conteudo }} />
+            <time className="text-lg xl:px-56 lg:px-42 md:px-24 sm:px-12 text-gray-300">{data}</time>
+            <div className="h-15" />
         </main>
     );
 }

@@ -10,7 +10,7 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
     const navigate = useNavigate();
 
     return (
-        <nav className="flex items-center justify-between gap-4 px-56 py-8 bg-transparent">
+        <nav className="flex items-center justify-between gap-4 xl:px-56 lg:px-24 md:px-0 sm:px-100 py-8 bg-transparent">
             <div className="flex items-center gap-2">
                 <button onClick={onToggleSidebar} className="text-white p-2 rounded-md hover:bg-white/10 transition">
                     {isSidebarOpen ? (
