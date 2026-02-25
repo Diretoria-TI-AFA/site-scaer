@@ -32,7 +32,6 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => navigate("/esquadroes")} variant="text-only">Esquadrões</Button>
                 <Button onClick={() => navigate("/clubes")} variant="text-only">Clubes e Diretorias</Button>
-                <Button onClick={() => navigate("/loja")} variant="text-only">Loja COMERCIAL</Button>
             </div>
         </nav>
     )

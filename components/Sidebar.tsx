@@ -24,7 +24,6 @@ export default function Sidebar({ onClose }: { onClose: () => void }) {
                 <Button onClick={() => { navigate("/sejasocio"); onClose(); }} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => { navigate("/esquadroes"); onClose(); }} variant="text-only">Esquadrões</Button>
                 <Button onClick={() => { navigate("/clubes"); onClose(); }} variant="text-only">Clubes e Diretorias</Button>
-                <Button onClick={() => { navigate("/loja"); onClose(); }} variant="text-only">Loja COMERCIAL</Button>
             </div>
             <div className="mt-auto">
                 <p className="text-white text-xs text-center">© 2026 SCAER. Todos os direitos reservados.</p>
