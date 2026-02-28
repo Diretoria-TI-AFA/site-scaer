@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen w-full bg-[url('/fundo.jpg')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
+      <div className="relative min-h-screen w-screen bg-[url('/fundo.jpg')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
         <div className={`fixed z-80 inset-y-0 left-0 w-64 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="h-full overflow-y-auto">
             <Sidebar onClose={() => setIsSidebarOpen(false)} />

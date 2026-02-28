@@ -10,7 +10,11 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
     const navigate = useNavigate();
 
     return (
-        <nav className="flex items-center justify-between gap-4 xl:px-56 lg:px-24 md:px-0 sm:px-100 py-8 bg-transparent">
+        <nav className="flex items-center justify-between gap-4 py-8 bg-transparent 
+        xl:px-56 
+        lg:px-24 
+        md:px-0 
+        sm:px-10">
             <div className="flex items-center gap-2">
                 <button onClick={onToggleSidebar} className="text-white p-2 rounded-md hover:bg-white/10 transition">
                     {isSidebarOpen ? (
@@ -23,11 +27,23 @@ export default function Topbar({ onToggleSidebar, isSidebarOpen }: TopbarProps) 
                         </svg>
                     )}
                 </button>
-                <div className="flex items-center px-2" onClick={() => navigate("/home")}>
+                <div className="flex items-center px-2
+                    hidden
+                    sm:px-2
+                    md:px-2
+                    lg:px-2
+                    xl:px-2"
+                    onClick={() => navigate("/home")}>
                     <img src="/logoSCAER_pretoebranco.png" alt="SCAER" className="w-auto max-h-24 mx-auto hover:bg-blue-900/20" />
                 </div>
             </div>
-            <div className="py-2">
+            <div className="py-2
+                hidden
+                sm:p-2
+                md:p-2
+                lg:p-2
+                xl:p-2"
+            >
                 <Button onClick={() => navigate("/noticias")} variant="text-only" >Noticias</Button>
                 <Button onClick={() => navigate("/sejasocio")} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => navigate("/esquadroes")} variant="text-only">Esquadrões</Button>

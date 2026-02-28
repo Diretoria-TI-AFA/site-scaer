@@ -31,10 +31,10 @@ export default function Home() {
     }, [currentImageIndex]);
 
     return (
-        <div className="flex flex-col pt-0">
+        <div className="flex flex-col pt-0 w-screen">
             <div className="relative top-0 z-0 overflow-hidden w-full">
                 {loadingFotos ? (
-                    <div className="w-full max-h-144 bg-sky-900 animate-pulse" style={{ height: "36rem" }} />
+                    <div className="w-screen max-h-144 bg-sky-900 animate-pulse" style={{ height: "36rem" }} />
                 ) : carrouselImages.length > 0 ? (
                     <>
                         <div
@@ -56,12 +56,12 @@ export default function Home() {
                                 <ChevronRight
                                     color="white"
                                     onClick={nextImage}
-                                    className="min-h-14 min-w-14 cursor-pointer absolute right-4 top-1/2 transform -translate-y-1/2"
+                                    className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 cursor-pointer absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 drop-shadow-lg hover:scale-110 transition-transform"
                                 />
                                 <ChevronLeft
                                     color="white"
                                     onClick={prevImage}
-                                    className="min-h-14 min-w-14 cursor-pointer absolute left-4 top-1/2 transform -translate-y-1/2"
+                                    className="h-6 w-6 cursor-pointer absolute left-4 top-1/2 transform -translate-y-1/2"
                                 />
                             </>
                         )}
