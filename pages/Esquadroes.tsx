@@ -4,10 +4,10 @@ export default function Esquadroes() {
     return (
         <>
             <div>
-                <img src="/banner_esq.png" alt="Esquadrões do CCAER" className="object-cover object-top w-screen max-h-[55rem]" />
+                <img src="/banner_esq.png" alt="Esquadrões do CCAER" className="object-cover object-top w-full max-h-[55rem]" />
             </div>
-            <div className="mb-36 w-auto h-auto py-12 flex justify-center items-center bg-sky-950">
-                <div className="flex gap-8 justify-between items-center w-full h-full pt-auto px-36">
+            <div className="mb-36 w-full h-auto py-12 flex justify-center items-center bg-sky-950">
+                <div className="flex gap-8 justify-between items-center w-full h-full pt-auto px-12">
                     <div>
                         <img className="rounded-full" src="/ath.svg" alt="Athos" />
                         <h2 className="text-auto lg:text-3xl text-center font-bold text-white ">Quarto Esquadrão</h2>
@@ -26,6 +26,7 @@ export default function Esquadroes() {
                     </div>
                 </div>
             </div>
+            <div className="py-24" />
         </>
     )
 }
