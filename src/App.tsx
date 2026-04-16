@@ -18,7 +18,16 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen w-full bg-[url('/fundo.gif')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
+      <div className="relative min-h-screen w-full overflow-x-hidden font-sans">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-[-1] fixed"
+        >
+          <source src="/fundo.mp4" type="video/mp4" />
+        </video>
         <div className={`fixed z-80 inset-y-0 left-0 w-64 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="h-full overflow-y-auto">
             <Sidebar onClose={() => setIsSidebarOpen(false)} />
