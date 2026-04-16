@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="flex flex-col pt-0 w-full overflow-hidden">
             <div className="relative top-0 z-0 overflow-hidden">
-                <img src="/assets/img/pagina_inicial.png" alt="Página Inicial" className="w-full" />
+                <img src="/Img/pagina_inicial.png" alt="Página Inicial" className="w-full" />
             </div>
 
             <div id="Noticias" className="bg-sky-950 px-2 lg:px-12 py-12">
