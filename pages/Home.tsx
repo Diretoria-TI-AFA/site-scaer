@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className="bg-sky-960">
-                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/assets/img/Profissionalismo.jpg')] bg-cover h-full aspect-[5/2]">
+                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/img/profissionalismo.jpg')] bg-cover h-full aspect-[5/2]">
                     <div className="max-w-[45%] text-right flex flex-col justify-end mt-auto ml-12 mr-auto">
                         <h2 className="text-left text-6xl"></h2>
                         <p className="text-justify text-2xl"></p>
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
 
             <div className="bg-sky-960">
-                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/assets/img/integridade.jpg')] bg-cover h-full aspect-[5/2]">
+                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/img/integridade.jpg')] bg-cover h-full aspect-[5/2]">
                     <div className="max-w-[45%] text-right flex flex-col justify-end mt-auto ml-12 mr-auto">
                         <h2 className="text-left text-6xl"></h2>
                         <p className="text-justify text-2xl"></p>
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             <div className="bg-sky-960">
-                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/assets/img/esp_corpo.jpg')] bg-cover h-full aspect-[5/2]">
+                <div className="flex flex-col justify-top font-bold py-24 text-white bg-[url('/img/esp_corpo.jpg')] bg-cover h-full aspect-[5/2]">
                     <div className="max-w-[45%] text-right items-end flex flex-col justify-end ml-auto mr-12">
                         <h2 className="text-right text-6xl"></h2>
                         <p className="text-justify text-2xl"></p>
