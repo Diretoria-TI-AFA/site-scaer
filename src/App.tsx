@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen w-full bg-[url('/fundo.gif')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
+      <div className="relative min-h-screen w-screen bg-[url('/fundo.jpg')] bg-cover bg-center bg-fixed overflow-x-hidden font-sans">
         <div className={`fixed z-80 inset-y-0 left-0 w-64 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="h-full overflow-y-auto">
             <Sidebar onClose={() => setIsSidebarOpen(false)} />
@@ -43,39 +43,48 @@ export default function App() {
         </main>
 
       </div>
-      <footer className="bg-sky-950 p-4 w-full">
+      <footer className="bg-sky-950/90 p-4">
         <div className="flex justify-between items-center px-6 text-white">
           <div className="flex flex-col justify-center space-x-4 mt-2">
-            <h2 className="text-white font-bold text-center">NOSSAS REDES SOCIAIS</h2>
-            <div className="flex gap-2 justify-center py-2 gap-8">
+            <h2 className="text-white">Nossas redes sociais</h2>
+            <div className="flex gap-2">
               <a href="https://www.instagram.com/scaer_afa/" target="_blank" rel="noopener noreferrer">
-                <img src="/instagram_icon_branco.svg" alt="Instagram" className="w-8 h-8 hover:scale-115 transition duration-100" />
+                <img src="/instagram_icon_branco.svg" alt="Instagram" className="w-8 h-8 hover:opacity-75" />
               </a>
               <a href="https://www.youtube.com/@AFAMilitar" target="_blank" rel="noopener noreferrer">
-                <img src="/youtube_icon_branco.svg" alt="YouTube" className="w-8 h-8 hover:scale-115 transition duration-100" />
+                <img src="/youtube_icon_branco.svg" alt="YouTube" className="w-8 h-8 hover:opacity-75" />
               </a>
             </div>
           </div>
           <div className="flex flex-col justify-center space-x-4 mt-2">
-            <h2 className="text-white font-bold text-center">TRANSPARÊNCIA</h2>
+            <h2 className="text-white">Transparência</h2>
             <div className="flex gap-2">
-              <a href="/Prestação" rel="noopener noreferrer" className="hover:scale-115 transition duration-300 text-center">
+              <a href="/Prestação" rel="noopener noreferrer">
                 Prestação de contas
               </a>
             </div>
           </div>
           <div className="flex flex-col justify-center space-x-4 mt-2">
-            <h2 className="text-white font-bold text-center">NOSSO ESTATUTO</h2>
+            <h2 className="text-white">Nosso estatuto</h2>
             <div className="flex gap-2">
-              <a href="/Estatuto" rel="noopener noreferrer" className="hover:scale-115 transition duration-300 text-center">
+              <a href="/Estatuto" rel="noopener noreferrer">
                 Nosso Estatuto
               </a>
             </div>
           </div>
+          <div className="flex flex-col justify-center space-x-4 mt-2">
+            <h2 className="text-white">Esportes</h2>
+            <div className="flex gap-2 flex-col">
+              <a href="/Interafa" rel="noopener noreferrer">
+                INTERAFA
+              </a>
+              <a href="Navamaer" rel="noopener noreferrer">
+                NAVAMAER
+              </a>
+            </div>
+          </div>
         </div>
-        <img src="/escudoSCAER_branco.svg" alt="Logo da SCAER" className="mx-auto max-w-56 max-h-56 pb-4 pt-24 object-contain hover:scale-110 transition duration-300 " />
-        <p className="text-center text-white">SITE OFICIAL DA SOCIEDADE DE CADETES DA AERONÁUTICA</p>
-        <p className="text-center text-white">© 2026 - Site produzido pela DIRETORIA DE IMPRENSA. Todos os Direitos Reservados.</p>
+        <p className="text-center text-white pt-18 pb-2">© Copyright SCAER 2026</p>
       </footer>
     </BrowserRouter>
   );
