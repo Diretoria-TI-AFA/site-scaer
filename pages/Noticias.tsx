@@ -7,11 +7,10 @@ export default function Noticias() {
     return (
         <>
             <div>
-                <img src="/home2.jpg" alt="SCAER" className="w-full max-h-[50rem] object-cover object-top mx-auto hover:bg-blue-900/20" />
+                <img src="/img/noticias.jpg" alt="SCAER" className="w-full max-h-[50rem] object-cover object-top mx-auto hover:bg-blue-900/20" />
             </div>
             <div className="bg-sky-950 w-screen flex flex-col justify-center items-center p-6">
-                <h1 className="text-4xl font-bold text-white">Noticias</h1>
-                <p className="text-gray-200 text-base leading-relaxed whitespace-pre-wrap">Confira as últimas notícias da SCAER</p>
+                <h1 className="text-4xl font-bold text-white">Confira as últimas notícias da SCAER</h1>
             </div>
             <div id="Noticias" className="bg-sky-950 text-center flex justify-center items-center py-12 gap-6">
                 {loading && (

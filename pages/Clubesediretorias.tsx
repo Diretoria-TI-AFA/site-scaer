@@ -18,7 +18,7 @@ export default function Clubesediretorias() {
     return (
         <>
             <div>
-                <img src="/home2.jpg" alt="" className="w-full h-[50rem] object-cover object-top " />
+                <img src="/img/clubes_diretorias.jpg" alt="" className="w-full h-[50rem] object-cover object-top " />
             </div>
             <div className="flex flex-col items-center bg-sky-950 backdrop-blur-xs p-4">
                 <h1 className="text-white text-4xl font-bold text-center mt-4">Clubes e Diretorias</h1>

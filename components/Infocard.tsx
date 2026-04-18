@@ -31,7 +31,7 @@ export default function Infocard({ post }: Props) {
             <img
                 src={imageUrl}
                 alt={post.titulo}
-                className="w-full h-40 sm:h-48 object-cover rounded-xl border border-sky-100/30 shrink-0"
+                className="w-full h-40 sm:h-50vh object-cover rounded-xl border border-sky-100/30 shrink-0"
             />
 
             <div className="pt-4 flex flex-col gap-2 flex-grow overflow-hidden">
