@@ -46,15 +46,10 @@ export default function PostPage() {
 
     return (
         <main className="mx-auto w-full h-auto flex-col bg-sky-950">
-            <img src="/home.jpg" alt="" className="w-full max-h-[50rem] object-cover object-top" />
+            <img src={imagemUrl} alt={post.titulo} className="w-full max-h-[50rem] object-cover object-center" />
             <h1 className="text-3xl xl:px-56 lg:px-42 md:px-24 sm:px-12 font-bold text-white text-center pt-12 ">
                 {post.titulo}
             </h1>
-            <img
-                src={imagemUrl}
-                alt={post.titulo}
-                className="w-full max-h-[30rem] object-cover xl:px-56 lg:px-42 md:px-24 sm:px-12 pt-6"
-            />
             <div className="pt-4 text-gray-200 prose-p:my-0 xl:px-56 lg:px-42 md:px-24 sm:px-12 text-base leading-relaxed whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: post.conteudo }} />
             <time className="text-lg xl:px-56 lg:px-42 md:px-24 sm:px-12 text-gray-300">{data}</time>
             <div className="h-15" />

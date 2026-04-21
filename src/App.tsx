@@ -52,8 +52,15 @@ export default function App() {
         </main>
 
       </div>
-      <footer className="bg-sky-950 p-4 w-full">
+      <footer className="bg-sky-950 p-4 pt-14 w-full">
         <div className="flex justify-between items-center px-6 text-white">
+          <div className="flex flex-col justify-center space-x-4 mt-2">
+            <h2 className="text-white font-bold text-center"></h2>
+            <div className="flex gap-2">
+              <a href="/Prestação" rel="noopener noreferrer" className="hover:scale-115 transition duration-300 text-center">
+              </a>
+            </div>
+          </div>
           <div className="flex flex-col justify-center space-x-4 mt-2">
             <h2 className="text-white font-bold text-center">NOSSAS REDES SOCIAIS</h2>
             <div className="flex gap-2 justify-center py-2 gap-8">
@@ -66,23 +73,14 @@ export default function App() {
             </div>
           </div>
           <div className="flex flex-col justify-center space-x-4 mt-2">
-            <h2 className="text-white font-bold text-center">TRANSPARÊNCIA</h2>
-            <div className="flex gap-2">
-              <a href="/Prestação" rel="noopener noreferrer" className="hover:scale-115 transition duration-300 text-center">
-                Prestação de contas
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center space-x-4 mt-2">
-            <h2 className="text-white font-bold text-center">NOSSO ESTATUTO</h2>
+            <h2 className="text-white font-bold text-center"></h2>
             <div className="flex gap-2">
               <a href="/Estatuto" rel="noopener noreferrer" className="hover:scale-115 transition duration-300 text-center">
-                Nosso Estatuto
               </a>
             </div>
           </div>
         </div>
-        <img src="/escudoSCAER_branco.svg" alt="Logo da SCAER" className="mx-auto max-w-56 max-h-56 pb-4 pt-24 object-contain hover:scale-110 transition duration-300 " />
+        <img src="/escudoSCAER_branco.svg" onClick={() => window.location.href = "/"} alt="Logo da SCAER" className="mx-auto max-w-56 max-h-56 pb-4 pt-24 object-contain hover:scale-110 transition duration-300 " />
         <p className="text-center text-white">SITE OFICIAL DA SOCIEDADE DE CADETES DA AERONÁUTICA</p>
         <p className="text-center text-white">© 2026 - Site produzido pela DIRETORIA DE IMPRENSA. Todos os Direitos Reservados.</p>
       </footer>
