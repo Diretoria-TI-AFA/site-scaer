@@ -32,7 +32,7 @@ export default function Sejasocio() {
                 <p className="text-justify px-auto text-white text-md py-2 flex justify-center items-center">
                     Associe-se à SCAER por meio do formulário:
                 </p>
-                <a className="text-justify px-4 text-white text-auto py-2 flex justify-center items-center mx-auto bg-indigo-950/20 border border-white/30 hover:border-white/40 hover:bg-indigo-900/30 max-w-1/5 backdrop-blur-sm rounded-xl" href="https://docs.google.com/forms/d/e/1FAIpQLScJ95qSbZkzTEuAJkBOedaGs5r92ao1ALC8N0deADeuh_ZMjQ/viewform">
+                <a className="text-justify px-4 text-white text-auto py-2 flex justify-center items-center mx-auto bg-indigo-950/20 border border-white/30 hover:border-white/40 hover:bg-indigo-900/30 w-fit  backdrop-blur-sm rounded-xl" href="https://docs.google.com/forms/d/e/1FAIpQLScJ95qSbZkzTEuAJkBOedaGs5r92ao1ALC8N0deADeuh_ZMjQ/viewform">
                     Clique aqui para se associar
                 </a>
             </div>

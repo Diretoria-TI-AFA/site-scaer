@@ -17,8 +17,8 @@ export default function Clubesediretorias() {
 
     return (
         <>
-            <div className="w-full h-auto">
-                <img src="/img/clubes_diretorias.jpg" alt="" className="w-full h-[50rem] object-cover object-top " />
+            <div>
+                <img src="/img/clubes_diretorias.jpg" alt="Imagem da cerimônia de aspirantado da turma Ártemis em 2025" className="mx-auto w-full h-auto max-h-172 object-cover object-center" />
             </div>
             <div className="flex flex-col items-center bg-sky-950 backdrop-blur-xs p-8 w-full">
                 <h1 className="text-white text-4xl font-bold text-center mb-12">Presidência</h1>
@@ -36,19 +36,19 @@ export default function Clubesediretorias() {
                 <div className="flex flex-wrap justify-center gap-8 md:gap-16 w-full max-w-6xl">
                     <div className="flex flex-col items-center w-32 md:w-40">
                         <p className="text-sky-400 text-sm text-center">Vice-Presidente</p>
-                        <h3 className="text-white text-lg font-semibold text-center leading-tight">CAD AV BERTELLI</h3>
+                        <h3 className="text-white text-xs sm:text-sm md:text-md font-semibold text-center leading-tight">CAD AV BERTELLI</h3>
                     </div>
                     <div className="flex flex-col items-center w-32 md:w-40">
                         <p className="text-sky-400 text-sm text-center">Secretária</p>
-                        <h3 className="text-white text-lg font-semibold text-center leading-tight">CAD INT JÚLIA SOUSA</h3>
+                        <h3 className="text-white text-xs sm:text-sm md:text-md font-semibold text-center leading-tight">CAD INT JÚLIA SOUSA</h3>
                     </div>
                     <div className="flex flex-col items-center w-32 md:w-40">
                         <p className="text-sky-400 text-sm text-center">Tesoureiros</p>
-                        <h3 className="text-white text-lg font-semibold text-center leading-tight">CAD INT AMANDA <br /> CAD INT ANDRÉ OLIVEIRA</h3>
+                        <h3 className="text-white text-xs sm:text-sm md:text-md font-semibold text-center leading-tight">CAD INT AMANDA <br /> CAD INT ANDRÉ OLIVEIRA</h3>
                     </div>
                     <div className="flex flex-col items-center w-32 md:w-40">
                         <p className="text-sky-400 text-sm text-center">ACI</p>
-                        <h3 className="text-white text-lg font-semibold text-center leading-tight">CAD AV ALVES <br /> CAD INT DOMINGUES <br /> CAD INT FARIAS</h3>
+                        <h3 className="text-white text-xs sm:text-sm md:text-md font-semibold text-center leading-tight">CAD AV ALVES <br /> CAD INT DOMINGUES <br /> CAD INT FARIAS</h3>
                     </div>
                 </div>
             </div>
