@@ -26,8 +26,8 @@ export default function Esquadroes() {
                     </div>
                 </div>
             </div>
-            <div className="h-auto">
-                <img src="/esquadroesccaer.png" alt="Esquadrões do CCAER" />
+            <div className="h-auto w-auto">
+                <img src="/esquadroesccaer.png" alt="Esquadrões do CCAER" className="w-full" />
             </div>
         </>
     )
