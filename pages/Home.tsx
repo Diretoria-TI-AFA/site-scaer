@@ -1,8 +1,10 @@
 import Infocard from "../components/Infocard";
 import { usePocketbase } from "../src/hooks/usePocketbase";
 import { getPosts } from "../src/services/postsapi"
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+    const navigate = useNavigate();
     const { data: posts, loading } = usePocketbase(() => getPosts());
 
     return (
@@ -10,7 +12,9 @@ export default function Home() {
             <div className="relative top-0 z-0 overflow-hidden">
                 <img src="/img/pag_inicial.jpg" alt="Página Inicial" className="w-full" />
             </div>
-
+            <div className="bg-sky-950 max-h-[100px] flex items-center cursor-pointer">
+                <img onClick={() => [navigate('/Interafa')]} className="justify-center h-screen mx-auto hover:scale-102 transition duration-300" src="/logo_interafa.svg" alt="Logo da INTERAFA" />
+            </div>
             <div id="Noticias" className="bg-sky-950 px-2 lg:px-12 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center w-full max-w-7xl mx-auto">
 
