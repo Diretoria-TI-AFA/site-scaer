@@ -11,6 +11,7 @@ import Navamaer from "../pages/Navamaer";
 import Interafa from "../pages/Interafa";
 import Paginadeposts from "../pages/Paginadeposts"
 import Noticias from "../pages/Noticias"
+import { SportResultsPage } from "../pages/SportResultsPage";
 
 
 export default function App() {
@@ -48,6 +49,7 @@ export default function App() {
             <Route path="/navamaer" element={<Navamaer />} />
             <Route path="/interafa" element={<Interafa />} />
             <Route path="/noticias" element={<Noticias />} />
+            <Route path="/esporte/:sportId" element={<SportResultsPage />} />
           </Routes>
         </main>
 

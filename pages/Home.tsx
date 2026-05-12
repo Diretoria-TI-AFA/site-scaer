@@ -1,10 +1,8 @@
 import Infocard from "../components/Infocard";
 import { usePocketbase } from "../src/hooks/usePocketbase";
 import { getPosts } from "../src/services/postsapi"
-import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-    const navigate = useNavigate();
     const { data: posts, loading } = usePocketbase(() => getPosts());
 
     return (
