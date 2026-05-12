@@ -3,10 +3,10 @@ export interface TeamImages {
 }
 
 export const TEAMS_IMAGES: TeamImages = {
-    PERSEU: "https://scaer.com.br/wp-content/uploads/2025/06/2025-2029_Perseu_Destaque-removebg-preview-1.png",
-    UIRAÇU: "https://scaer.com.br/wp-content/uploads/2025/06/2024-2028_Uiracu_Destaque-fill-350x351-removebg-preview-2.png",
-    ATHOS: "https://scaer.com.br/wp-content/uploads/2025/06/2023-2026_Athos_Destaque-fill-350x351-1.webp",
-    DRAKON: "/drakon-removebg-preview.png",
+    PERSEU: "/prs.svg",
+    UIRAÇU: "/uir.svg",
+    ATHOS: "/ath.svg",
+    DRAKON: "/drk.svg",
 };
 
 export const TEAM_GRADIENTS: { [key: string]: string } = {
