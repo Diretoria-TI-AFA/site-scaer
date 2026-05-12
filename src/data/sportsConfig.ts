@@ -230,7 +230,7 @@ export const SPORTS_CONFIG: SportConfig[] = [
     {
         id: "escalada",
         name: "Escalada",
-        icon: "https://scaer.com.br/wp-content/uploads/2025/07/clb.png",
+        icon: "/escalada.png",
         url: "",
         events: [
             { id: "speed-masc", name: "Speed Masculino", tableType: "ranking" },
