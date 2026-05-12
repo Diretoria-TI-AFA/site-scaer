@@ -231,7 +231,8 @@ export default function Interafa() {
                         </table>
                     </div>
                 </section>
-
+                <h1 className="text-3xl sm:text-4xl font-bold">PAINEL DE ESPORTES</h1>
+                
                 <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
                     {quadro.map((item) => (
                         <div
