@@ -233,8 +233,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "/escalada.png",
         url: "",
         events: [
-            { id: "speed-masc", name: "Speed Masculino", tableType: "ranking" },
-            { id: "speed-fem", name: "Speed Feminino", tableType: "ranking" },
             { id: "GERAL", name: "Geral", tableType: "ranking" }
         ]
     }
