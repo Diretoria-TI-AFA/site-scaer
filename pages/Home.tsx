@@ -30,8 +30,8 @@ export default function Home() {
                     )}
                     <Infocard
                         key="interafa"
-                        title="LVIII INTERAFA"
-                        description="FIQUE POR DENTRO DE TUDO O QUE ACONTECE NA LVIII INTERAFA"
+                        title="LIII INTERAFA"
+                        description="FIQUE POR DENTRO DE TUDO O QUE ACONTECE NA LIII INTERAFA"
                         image="/interafa.png"
                         redirectTo="/interafa"
                         variant="interafa"

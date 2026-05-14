@@ -37,51 +37,11 @@ export interface SportConfig {
 
 export const SPORTS_CONFIG: SportConfig[] = [
     {
-        id: "geral",
-        name: "Quadro Geral de Medalhas",
-        icon: "https://scaer.com.br/wp-content/uploads/2025/11/ChatGPT_Image_26_de_nov._de_2025__10_39_25-removebg-preview.png",
-        url: "https://script.google.com/macros/s/AKfycbzi_Q0LlUmy9L2N5RTd01dgXja84lKOOEriq7R69hxdMkwLwgZGViIbYGEYKJaI8vD-nQ/exec",
-        events: [
-            { id: "quadrogeral", name: "Quadro de Medalhas", tableType: "medals" },
-            { id: "podios", name: "Pódios por Esporte", tableType: "medals" }
-        ]
-    },
-    {
         id: "atletismo",
         name: "Atletismo",
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/ath.png",
         url: "https://script.google.com/macros/s/AKfycbyMjdH28bWj3thrN2Jlw4QAmDV_kuMqGjn5NpATUDS1pD2139ckI81SfZA6gmjUpLJfVg/exec",
         events: [
-            { id: "100mMASC", name: "100m MASC", tableType: "ranking" },
-            { id: "200mMASC", name: "200m MASC", tableType: "ranking" },
-            { id: "400mMASC", name: "400m MASC", tableType: "ranking" },
-            { id: "800mMASC", name: "800m MASC", tableType: "ranking" },
-            { id: "100mFEM", name: "100m FEM", tableType: "ranking" },
-            { id: "200mFEM", name: "200m FEM", tableType: "ranking" },
-            { id: "400mFEM", name: "400m FEM", tableType: "ranking" },
-            { id: "800mFEM", name: "800m FEM", tableType: "ranking" },
-            { id: "1.500mMASC", name: "1.500m MASC", tableType: "ranking" },
-            { id: "5.000mMASC", name: "5.000m MASC", tableType: "ranking" },
-            { id: "10.000mMASC", name: "10.000m MASC", tableType: "ranking" },
-            { id: "1.500mFEM", name: "1.500m FEM", tableType: "ranking" },
-            { id: "5.000mFEM", name: "5.000m FEM", tableType: "ranking" },
-            { id: "10.000mFEM", name: "10.000m FEM", tableType: "ranking" },
-            { id: "110mBarreiras", name: "110m c/Barreiras", tableType: "ranking" },
-            { id: "400mBarreiras", name: "400m c/Barreiras", tableType: "ranking" },
-            { id: "3000mObstaculos", name: "3.000m c/Obstáculos", tableType: "ranking" },
-            { id: "4x100mMASC", name: "4x100m MASC", tableType: "ranking" },
-            { id: "4x400mMASC", name: "4x400m MASC", tableType: "ranking" },
-            { id: "4x100mFEM", name: "4x100m FEM", tableType: "ranking" },
-            { id: "4x400mFEM", name: "4x400m FEM", tableType: "ranking" },
-            { id: "SaltoAlturaMASC", name: "Salto em Altura MASC", tableType: "ranking" },
-            { id: "SaltoAlturaFEM", name: "Salto em Altura FEM", tableType: "ranking" },
-            { id: "SaltoDistanciaMASC", name: "Salto em Distância MASC", tableType: "ranking" },
-            { id: "SaltoDistanciaFEM", name: "Salto em Distância FEM", tableType: "ranking" },
-            { id: "SaltoTriplo", name: "Salto Triplo", tableType: "ranking" },
-            { id: "SaltoVara", name: "Salto com Vara", tableType: "ranking" },
-            { id: "Peso", name: "Peso", tableType: "ranking" },
-            { id: "Dardo", name: "Dardo", tableType: "ranking" },
-            { id: "GERAL", name: "Geral", tableType: "ranking" }
         ]
     },
     {
@@ -108,14 +68,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/jud.png",
         url: "https://script.google.com/macros/s/AKfycbw2UC7MrAdT73C6Zk6bE9jEiwuEKm94I52UcNceo9QbadNrRBPrwwH6h__MdQHVYLTqDA/exec",
         events: [
-            { id: "ligeiro", name: "Ligeiro", tableType: "matches" },
-            { id: "meio-leve", name: "Meio-Leve", tableType: "matches" },
-            { id: "leve", name: "Leve", tableType: "matches" },
-            { id: "meio-medio", name: "Meio-Médio", tableType: "matches" },
-            { id: "medio", name: "Médio", tableType: "matches" },
-            { id: "meio-pesado", name: "Meio-Pesado", tableType: "matches" },
-            { id: "pesado", name: "Pesado", tableType: "matches" },
-            { id: "absoluto", name: "Absoluto", tableType: "matches" }
         ]
     },
     {
@@ -124,13 +76,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/fen.png",
         url: "",
         events: [
-            { id: "florete-masc", name: "Florete Masculino", tableType: "matches" },
-            { id: "florete-fem", name: "Florete Feminino", tableType: "matches" },
-            { id: "espada-masc", name: "Espada Masculino", tableType: "matches" },
-            { id: "espada-fem", name: "Espada Feminino", tableType: "matches" },
-            { id: "sabre-masc", name: "Sabre Masculino", tableType: "matches" },
-            { id: "sabre-fem", name: "Sabre Feminino", tableType: "matches" },
-            { id: "absoluto", name: "Absoluto", tableType: "matches" }
         ]
     },
     {
@@ -164,11 +109,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/ChatGPT-Image-15-de-jul.-de-2025-14_26_32-1.png",
         url: "https://script.google.com/macros/s/AKfycbwojdwUV6saeIrTGAnpTCLuwTRYW6aQz7jqjMHEHZKh4j9jicDRHLq1UhOcLIDm3VoC9g/exec",
         events: [
-            { id: "GERAL", name: "Geral", tableType: "ranking" },
-            { id: "MMASC", name: "Médio Masculino", tableType: "ranking" },
-            { id: "MFEM", name: "Médio Feminino", tableType: "ranking" },
-            { id: "LMASC", name: "Longo Masculino", tableType: "ranking" },
-            { id: "LFEM", name: "Longo Feminino", tableType: "ranking" }
         ]
     },
     {
@@ -177,12 +117,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/mpn.png",
         url: "https://script.google.com/macros/s/AKfycbwQHydiGtkQgKQIShys73GBIgm8cULESubEJe1Vj-avtBICcJfVZEz1FkfLpzw4tInSfg/exec",
         events: [
-            { id: "ppm", name: "Pista de Pentatlo Militar", tableType: "ranking" },
-            { id: "natacao-utilitaria", name: "Natação Utilitária", tableType: "ranking" },
-            { id: "lancamento-de-granada", name: "Lançamento de Granada", tableType: "ranking" },
-            { id: "tiro", name: "Tiro", tableType: "ranking" },
-            { id: "cross-country", name: "Cross Country", tableType: "ranking" },
-            { id: "GERAL", name: "Geral (Pontuação Total)", tableType: "ranking" }
         ]
     },
     {
@@ -202,8 +136,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         events: [
             { id: "pistola-ar", name: "Pistola de Ar", tableType: "ranking" },
             { id: "carabina-ar", name: "Carabina de Ar", tableType: "ranking" },
-            { id: "fogo-central", name: "Fogo Central", tableType: "ranking" },
-            { id: "GERAL", name: "Geral", tableType: "ranking" }
         ]
     },
     {
@@ -212,10 +144,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/tri.png",
         url: "https://script.google.com/macros/s/AKfycbwUUArVYUalO2H736WESs1D985lGMU7TmPJiPt9ZuFi5_l5rH4heaxBnIge2QtpXggA0Q/exec",
         events: [
-            { id: "sprint", name: "Sprint", tableType: "ranking" },
-            { id: "olimpico", name: "Olímpico", tableType: "ranking" },
-            { id: "revezamento", name: "Revezamento", tableType: "ranking" },
-            { id: "GERAL", name: "Geral", tableType: "ranking" }
         ]
     },
     {
@@ -233,7 +161,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "/escalada.png",
         url: "",
         events: [
-            { id: "GERAL", name: "Geral", tableType: "ranking" }
         ]
     }
 ];
