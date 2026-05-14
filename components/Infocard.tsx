@@ -101,7 +101,7 @@ export default function Infocard(props: Props) {
 
             {isInterafa && (
                 <span className="mt-auto pt-2 text-xs text-center font-bold tracking-widest text-sky-950 uppercase">
-                    LVIII INTERAFA - 12 A 18 DE MAIO
+                    LIII INTERAFA - 12 A 18 DE MAIO
                 </span>
             )}
         </article>
