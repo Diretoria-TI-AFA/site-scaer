@@ -84,23 +84,6 @@ export const SPORTS_CONFIG: SportConfig[] = [
         icon: "https://scaer.com.br/wp-content/uploads/2025/07/swm.png",
         url: "https://script.google.com/macros/s/AKfycbwG514pg936nGsjwHxWkTeGtDKijgDTNlS6l7wL1fh0F0cqOsSHoiUVdkZ_3onX6K2cpg/exec",
         events: [
-            { id: "equipes", name: "Equipes", tableType: "medals" },
-            { id: "200LM", name: "200LM", tableType: "ranking" },
-            { id: "100CM", name: "100CM", tableType: "ranking" },
-            { id: "50LF", name: "50LF", tableType: "ranking" },
-            { id: "100LM", name: "100LM", tableType: "ranking" },
-            { id: "100PM", name: "100PM", tableType: "ranking" },
-            { id: "50PF", name: "50PF", tableType: "ranking" },
-            { id: "4x100LM", name: "4x100LM", tableType: "ranking" },
-            { id: "4x50LF", name: "4x50LF", tableType: "ranking" },
-            { id: "100BM", name: "100BM", tableType: "ranking" },
-            { id: "50BF", name: "50BF", tableType: "ranking" },
-            { id: "200MM", name: "200MM", tableType: "ranking" },
-            { id: "50CF", name: "50CF", tableType: "ranking" },
-            { id: "50LM", name: "50LM", tableType: "ranking" },
-            { id: "4x100MM", name: "4x100MM", tableType: "ranking" },
-            { id: "4x50MF", name: "4x50MF", tableType: "ranking" },
-            { id: "4x50LM", name: "4x50LM", tableType: "ranking" }
         ]
     },
     {

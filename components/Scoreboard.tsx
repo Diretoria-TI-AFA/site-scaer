@@ -21,6 +21,12 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({ sport, onBack }) => {
     const [activeEvent, setActiveEvent] = useState(allEvents[0]?.id || '');
     const currentEvent = allEvents.find((e) => e.id === activeEvent);
 
+    React.useEffect(() => {
+        if (!activeEvent && allEvents.length > 0) {
+            setActiveEvent(allEvents[0].id);
+        }
+    }, [allEvents, activeEvent]);
+
     const { data, loading } = useSupabase(
         sport.id,
         activeEvent,
@@ -41,12 +47,14 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({ sport, onBack }) => {
         "border-b border-[#eeeeee] bg-[#031b2b] px-[15px] py-[15px] text-center font-['Bebas_Neue'] text-[20px] tracking-[1px] text-white max-[600px]:px-[5px] max-[600px]:py-[10px]";
 
     const renderRankingTable = () => {
+        const hasMarks = data.some(item => item.time_mark && item.time_mark.trim() !== '');
+
         return (
             <table className={tableBaseClass}>
                 <thead>
                     <tr>
                         <th
-                            colSpan={4}
+                            colSpan={hasMarks ? 4 : 3}
                             className={`${headBaseClass} text-[24px] max-[600px]:text-[18px]`}
                         >
                             {currentEvent?.name}
@@ -55,7 +63,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({ sport, onBack }) => {
                     <tr>
                         <th className={headBaseClass}>Posição</th>
                         <th className={headBaseClass}>Atleta</th>
-                        <th className={headBaseClass}>Tempo / Marca</th>
+                        {hasMarks && <th className={headBaseClass}>Tempo / Marca</th>}
                         <th className={headBaseClass}>Equipe</th>
                     </tr>
                 </thead>
@@ -71,7 +79,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({ sport, onBack }) => {
                             >
                                 <td className={cellBaseClass}>{item.position}º</td>
                                 <td className={cellBaseClass}>{item.athlete}</td>
-                                <td className={cellBaseClass}>{item.time_mark || '-'}</td>
+                                {hasMarks && <td className={cellBaseClass}>{item.time_mark || '-'}</td>}
                                 <td className={`${cellBaseClass} font-medium`}>
                                     {getTeamImage(item.team) ? (
                                         <img

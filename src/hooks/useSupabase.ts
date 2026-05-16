@@ -6,7 +6,10 @@ export const useSupabase = (sportId: string, eventId: string, tableType: string)
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        if (!sportId || !eventId) return;
+        if (!sportId || !eventId) {
+            setLoading(false);
+            return;
+        }
 
         const tableName = tableType === 'matches' ? 'matches' : tableType === 'medals' ? 'medals' : 'rankings';
 
@@ -16,7 +19,7 @@ export const useSupabase = (sportId: string, eventId: string, tableType: string)
             let query = supabase.from(tableName).select('*');
 
             if (sportId !== 'geral') {
-                query = query.eq('sport_id', sportId).eq('event_id', eventId);
+                query = query.ilike('sport_id', sportId).eq('event_id', eventId);
             }
 
             if (tableName === 'matches') query = query.order('created_at', { ascending: true });
@@ -26,7 +29,7 @@ export const useSupabase = (sportId: string, eventId: string, tableType: string)
             const { data: result, error } = await query;
 
             if (error) {
-                console.error('Error fetching data:', error);
+                console.error(`Error fetching data:`, error);
             } else {
                 setData(result || []);
             }
@@ -35,19 +38,15 @@ export const useSupabase = (sportId: string, eventId: string, tableType: string)
 
         fetchData();
 
-        // Subscribe to realtime changes
-        const filterString = sportId !== 'geral' ? `sport_id=eq.${sportId}` : undefined;
-
-        const subscription = supabase
-            .channel('public:' + tableName)
-            .on('postgres_changes', { event: '*', schema: 'public', table: tableName, filter: filterString }, () => {
-                // Reload data on any change
+        const channel = supabase
+            .channel('db-changes')
+            .on('postgres_changes', { event: '*', schema: 'public', table: tableName, filter: sportId !== 'geral' ? `sport_id=eq.${sportId}` : undefined }, () => {
                 fetchData();
             })
             .subscribe();
 
         return () => {
-            supabase.removeChannel(subscription);
+            supabase.removeChannel(channel);
         };
     }, [sportId, eventId, tableType]);
 
