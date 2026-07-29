@@ -21,6 +21,7 @@ export default function Sidebar({ onClose }: { onClose: () => void }) {
             </div>
             <div className="flex flex-col space-y-1">
                 <Button onClick={() => { navigate("/noticias"); onClose(); }} variant="text-only">Noticias</Button>
+                <Button onClick={() => { navigate("/parcerias"); onClose(); }} variant="text-only">Parcerias</Button>
                 <Button onClick={() => { navigate("/sejasocio"); onClose(); }} variant="text-only">Seja Sócio</Button>
                 <Button onClick={() => { navigate("/esquadroes"); onClose(); }} variant="text-only">Esquadrões</Button>
                 <Button onClick={() => { navigate("/clubes"); onClose(); }} variant="text-only">Clubes e Diretorias</Button>
